@@ -80,6 +80,7 @@ public class IntListExercises {
         if (lst.rest == null) {
             done = true;
         }
-        return done || squarePrimes(lst.rest);
+
+        return squarePrimes(lst.rest) || done;
     }
 }
