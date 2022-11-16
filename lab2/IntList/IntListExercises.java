@@ -76,11 +76,10 @@ public class IntListExercises {
         if (currElemIsPrime) {
             lst.first *= lst.first;
         }
-        boolean done = false;
         if (lst.rest == null) {
-            done = true;
+            currElemIsPrime = true;
         }
 
-        return squarePrimes(lst.rest) || done;
+        return squarePrimes(lst.rest) || currElemIsPrime;
     }
 }
